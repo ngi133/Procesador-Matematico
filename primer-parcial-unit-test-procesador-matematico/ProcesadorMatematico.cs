@@ -8,7 +8,7 @@ namespace primer_parcial_unit_test_procesador_matematico
 {
     public class ProcesadorMatematico
     {
-        private int _resultado;
+        public int _resultado;
 
         public void Sumar(int primerNumero, int segundoNumero)
         {
@@ -46,6 +46,11 @@ namespace primer_parcial_unit_test_procesador_matematico
             {
                 this._resultado = segundoNumero;
             }
+        }
+
+        public static implicit operator ProcesadorMatematico(int v)
+        {
+            throw new NotImplementedException();
         }
     }
 }
